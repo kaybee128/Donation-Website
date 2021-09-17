@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>Golden Stick Old Age Homes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="https://cdn106.picsart.com/206865154003201.jpg?type=webp&to=min&r=640" >
+
+<style>
+  
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+a{
+    text-decoration: none;
+}
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="data:image/jpeg;base64,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" style="width:100% ;height:22%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> GOLDEN STICK</h1>
+    <p>Old Age Homes in Delhi</p>
+    <img src="https://p0.pikist.com/photos/557/759/people-homeless-man-poverty-male-poor-homelessness-hobo-person.jpg" alt="boy" class="w3-image" width="800" height="900">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Us</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Golden Stick has been helping aged citizens of Delhi with accommodation and care for over the past 16 years. This senior care center cum NGO provides free food, shelter, medical care, and clothes to the abandoned old age people. This senior home is known for providing 24/7 medical care, TV, AC accommodation, X-ray, and scanner room to make medical support readily available for senior citizens. 
+        Total capacity of the Home is 100 persons. There are 11 employees working in the Home under the control of Superintendent. Government is providing free of cost boarding, lodging and medical facilities, still we are out of funds and need new contributions.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Funding Resources</h3>
+    <p class="w3-wide">NGOs</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Foreign Funds</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div>
+    <p class="w3-wide">Government </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:20%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Working Staff and Nurses
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2-3</span><br>
+        Homes In Delhi
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Inmates
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Regular Donors
+      </div>
+    </div>
+
+    
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">DONATE FOR US</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">In Kind</li>
+          <li class="w3-padding-16">Raw food materials and items</li>
+          <li class="w3-padding-16">Furniture</li>
+          <li class="w3-padding-16">Electrical Appliances</li>
+          <li class="w3-padding-16">Others</li>
+          <li class="w3-padding-16" >
+            <h2>To donate contact us </h2>
+            <!-- <span class="w3-opacity">per month</span> -->
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black nn"> <a href="#contact" > contact us</a></button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Monetary</li>
+          <li class="w3-padding-16">Cash</li>
+          <li class="w3-padding-16">Cards</li>
+          <li class="w3-padding-16">Wallet</li>
+          <li class="w3-padding-16">UPI and others</li>
+          <li class="w3-padding-16">
+            <h2>₹500</h2>
+            <!-- <span class="w3-opacity">per month</span> -->
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button id="rzp-button1" class="w3-button w3-white w3-padding-large w3-hover-black">Donate Now
+                <div>
+                    <form>
+                      <!-- <button id="rzp-button1"> -->  
+                        <!-- <i class="fas fa-donate"></i>&nbsp;&nbsp;Donate here -->
+                      <!-- </button> -->
+                      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+                       <script>
+                        var options = {
+                          key: "rzp_test_2tK3fVumpgxIps", // Enter the Key ID generated from the Dashboard
+                          amount: "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                          currency: "INR",
+                          name: "Kritika Bansal",
+                          description: "Please lend us Helping hand",
+                          handler: function (response) {
+                            if (
+                              typeof response.razorpay_payment_id == "undefined" ||
+                              response.razorpay_payment_id < 1
+                            ) {
+                              swal({
+                                title: "Please try again later!",
+                                icon: "error",
+                                button: "Close",
+                              });
+                            } else {
+                              swal({
+                                title: "Thank You!",
+                                icon: "success",
+                                button: "Close",
+                              });
+                            }
+                          },
+                          theme: {
+                            color: "#3399cc",
+                          },
+                        };
+                        var rzp1 = new Razorpay(options);
+                        document.getElementById("rzp-button1").onclick = function (
+                          e
+                        ) {
+                          rzp1.open();
+                          e.preventDefault();
+                        };
+                      </script>
+                    </form>
+                  </div>
+                </div></button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+   
+  
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Our Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-07/28/full/1532794836-9741.jpg" style="width:100%">
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/06/16/836844-jivan-sandhya-old-age-home.jpg" style="width:100%">
+        <img src="https://static.toiimg.com/thumb/msid-66011732,width-1200,height-900,resizemode-4/.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://ppreddyoldagehome.com/wp-content/uploads/2020/04/a6-1-1-900x300.jpg" style="width:100%">
+        <img src="https://us.123rf.com/450wm/tan4ikk/tan4ikk2102/tan4ikk210200084/164230737-senior-woman-hand-in-caregiver-hands.jpg?ver=6" style="width:100%">
+        <img src="https://images.indianexpress.com/2017/05/jharna-biswas-feature_759.jpg" style="width:100%">
+        <!-- <img src="/w3images/p6.jpg" style="width:100%"> -->
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Reach Out To Us At</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 200, Derawal Nagar, Delhi</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: heydnwi@gmail.com</p>
+    </div><br>
+    <p> Send us a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.linkedin.com/in/kritika-bansal-584b331b3/" target="_blank" class="w3-hover-text-green">KRITIKA BANSAL</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script src="./app.js"></script>
+
+</body>
+</html>
